@@ -1,0 +1,208 @@
+.headerMobile{
+    padding: 0px 20px;
+    color: white;
+    flex-direction: row;
+    animation: none;
+    border-bottom: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #5c0164;
+}
+.homeMobile{
+    display: block;
+    height: fit-content;
+    padding-top: calc(70px + 40px);
+    background-image: linear-gradient(#5c0164, #6b0e5b);
+}
+.homeMobile .cntrNotebook{
+    display: none;
+}
+.homeMobile .cntrSemiCirc > img {
+    display: none;
+}
+.homeMobile .cntrSemiCirc {
+    position: relative;
+    z-index: 1;
+    color: rgb(230, 230, 230);
+    animation: none;
+    border: 22px solid #e2e9e3;
+    border-top: 26px solid #e2e9e3;
+    border-bottom: 26px solid #e2e9e3;
+    border-radius: 14px 14px 0px 0px;
+    margin: 0px 30px;
+    width: calc(100% - 60px);
+}
+.homeMobile .cntrBemVindo {
+    position: relative;
+    padding-left: 0px;
+    background-color: #121212;
+    width: 100%;
+    padding: 30px;
+}
+.homeMobile .cntrBemVindo h1 {
+    font-size: 2.3em;
+}
+.homeMobile .cntrBemVindo button {
+    margin-top: 30px;
+    padding: 12px 30px;
+}
+.homeMobile .btnsNavegacao {
+    transition: 1s;
+    padding: 0px;
+}
+
+.homeMobile .tecladoNotebook{
+    width: 100%;
+    height: 22px;
+    display: block;
+    background-color: #e5eeee;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: relative;
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+
+
+.sobreMimMobile{
+    min-height: none;
+    margin-top: 40px;
+}
+.sobreMimMobile .enfeite2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: .2;
+    transform: scale(.6);
+}
+.sobreMimMobile > h1 {
+    color: #ffffff;
+    font-size: 1.7em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sobreMimMobile .cntrSobreMimTexto > h2 {
+    display: none;
+}
+
+.sobreMimMobile > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 0px 10px;
+}
+.sobreMimMobile .cntrSobreMimTexto {
+    margin: 20px;
+}
+.sobreMimMobile .cntrSobreMimTexto p:nth-child(3){
+    display: none;
+}
+.sobreMimMobile .cntrSobreMimFoto .cntrFoto {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+}
+.sobreMimMobile .cntrSobreMimFoto .circuloFoto {
+    width: 250px;
+    height: 250px;
+}
+.sobreMimMobile .ultimoParagrafo{
+    display: none;
+}
+.sobreMimMobile .ultimoParagrafoOutSide{
+    display: block;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+.projetosMobile{
+
+}
+.projetosMobile .enfeite3 {
+    left: 20px;
+    opacity: .5;
+    top: 0px;
+    transform: scale(.6);
+}
+.projetosMobile .enfeite5 {
+    position: absolute;
+    right: 0px;
+    opacity: .1;
+    top: 100px;
+    width: 60px;
+}
+.projetosMobile .projetos h1 {
+    color: #ffffff;
+    font-size: 1.6em;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+    padding-top: 20px;
+}
+.projetosMobile .boxViewProjetos {
+    width: 100%;
+    padding: 12px;
+    z-index: 1;
+}
+.projetosMobile .enfeite3-2 {
+    position: absolute;
+    right: 10px;
+    opacity: .3;
+}
+
+
+.contatoMobile .cntrContato {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.contatoMobile .cntrContato form {
+    width: 90%;
+}
+.contatoMobile .cntrContato > span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    margin: 30px 0px;
+}
+.contatoMobile .cntrContato > span div {
+    width: 100%;
+    height: 2px;
+}
+.contatoMobile .cntrContato > span p {
+    padding: 0px 20px;
+}
+.contatoMobile .cntrBtnContatoRedes {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contatoMobile .cntrBtnContatoRedes button {
+    width: calc(50% - 8px);
+    padding: 10px;
+    font-size: 1em;
+    margin: 4px 2px;
+    outline: none;
+    height: 42px;
+    background-color: #09151f;
+    border: none;
+    color: #999;
+    cursor: pointer;
+}
