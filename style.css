@@ -17,6 +17,9 @@ body{
     position: relative;
     background-color: var(--corPrincipal);
 }
+body > *{
+    overflow-x: hidden;
+}
 header{
     border-bottom: 1px solid #666;
     display: flex;
