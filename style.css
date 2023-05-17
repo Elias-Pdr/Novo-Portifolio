@@ -844,4 +844,6 @@ main{
     border: 1px solid red;
 }
 
-
+.home .cntrContatoHeader{
+    display: none;
+}
