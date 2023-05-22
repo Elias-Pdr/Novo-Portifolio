@@ -289,9 +289,9 @@
             navegacao.style.flexDirection = "row";
 
             for (let i = 0; i < btnsNavegacao.length; i++) {
-                btnsNavegacao[i].style.width = "fit-content"
-                btnsNavegacao[i].style.margin = "2px"
-                btnsNavegacao[i].style.fontSize = ".9em"
+                btnsNavegacao[i].classList.add("btnsNavegacaoHeaderSuperior")
+                btnsNavegacao[i].classList.remove("btnsNavegacaoHeaderLateral")
+
             }
 
         }
@@ -313,9 +313,8 @@
             navegacao.style.padding = "0px 4px";
 
             for (let i = 0; i < btnsNavegacao.length; i++) {
-                btnsNavegacao[i].style.width = "100%"
-                btnsNavegacao[i].style.margin = "2px 4px"
-                btnsNavegacao[i].style.fontSize = ".9em"
+                btnsNavegacao[i].classList.add("btnsNavegacaoHeaderLateral")
+                btnsNavegacao[i].classList.remove("btnsNavegacaoHeaderSuperior")
             }
 
         }
@@ -378,30 +377,31 @@
     
         window.addEventListener('scroll', function() {
             if (window.pageYOffset < (ancoras[1].getBoundingClientRect().top + window.pageYOffset) - 135){
-                corbtnsNavegacao("0")
+                corbtnsNavegacao("0", "4")
             }
             else if (window.pageYOffset < (ancoras[2].getBoundingClientRect().top + window.pageYOffset) - 135){
-                corbtnsNavegacao("1")
+                corbtnsNavegacao("1", "5")
 
             }
             else if (window.pageYOffset < (ancoras[3].getBoundingClientRect().top + window.pageYOffset) - 135){
-                corbtnsNavegacao("2")
+                corbtnsNavegacao("2", "6")
 
             }
             else if (window.pageYOffset > (ancoras[3].getBoundingClientRect().top + window.pageYOffset) - 135){
-                corbtnsNavegacao("3")
+                corbtnsNavegacao("3", "7")
 
             }
         });
 
-        corbtnsNavegacao("0")
-        function corbtnsNavegacao(indice){
+        corbtnsNavegacao("0", "0")
+        function corbtnsNavegacao(indice1, indice2){
             for (let i = 0; i < btnsNavegacao.length; i++) {
                 //btnsNavegacao[i].style.color = "white"
                 btnsNavegacao[i].style.backgroundColor = "rgba(255, 255, 255, 0)"
             }
             //btnsNavegacao[indice].style.color = "#d14a5e"
-            btnsNavegacao[indice].style.backgroundColor = "rgba(255, 255, 255, 0.1)"
+            btnsNavegacao[indice1].style.backgroundColor = "rgba(255, 255, 255, 0.1)"
+            btnsNavegacao[indice2].style.backgroundColor = "rgba(255, 255, 255, 0.1)"
 
         }
 
@@ -628,9 +628,11 @@
                 projetos.classList.add("projetosMobile")
                 contato.classList.add("contatoMobile")
                 document.querySelector(".enfeite").style.zIndex = "-1"
+
                 controllerMenu();
             }
             else {
+
                 mobile = false;
                 header.style.display = "flex"
                 headerMobile.style.display = "none"
