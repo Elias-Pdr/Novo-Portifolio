@@ -106,6 +106,7 @@ header{
     text-align: center;
     color: white;
     text-decoration: none;
+    min-width: fit-content;
 }
 
 .btnsNavegacao:hover{
@@ -207,6 +208,11 @@ main{
 .cntrBemVindo h1{
     font-size: 2.7em;
     font-weight: 900;
+    z-index: 999;
+}
+.home .btnsNavegacao {
+    transition: 1s;
+    padding: 0px;
 }
 .cntrBemVindo h1 .myName{
     color: #c492db;
@@ -259,7 +265,7 @@ main{
     right: 0px;
     margin-top: 120px;
     overflow: hidden;
-    z-index: 2;
+    z-index: 3;
 
 }
 .cntrNotebook img{
@@ -279,7 +285,7 @@ main{
 .enfeite{
     position: absolute;
     bottom: 0px;
-    z-index: -1;
+    z-index: 1;
     right: 0px;
     width: 500px;
 }
@@ -292,7 +298,7 @@ main{
 
 .sobreMim{
     position: relative;
-    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -306,11 +312,8 @@ main{
     opacity: .2;
 }
 .sobreMim > h1{
-    color: #ffffff;
-    font-size: 2em;
-    width: 100%;
-    text-align: center;
     margin-bottom: 100px;
+    padding-top: 30px;
 }
 .sobreMim > div{
     display: flex;
@@ -328,21 +331,19 @@ main{
     margin-bottom: 10px;
 
 }
-.cntrSobreMimTexto p, .ultimoParagrafoOutSide{
+.cntrSobreMimTexto p{
     font-size: 1em;
     color: white;
     margin-bottom: 12px;
     font-family: 'Noto Sans KR', sans-serif;
-
+    line-height: 1.7;
 }
-.cntrSobreMimTexto p span, .ultimoParagrafoOutSide span{
+.cntrSobreMimTexto p span{
     color: #9f23fe;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
 }
-.ultimoParagrafoOutSide{
-    display: none;
-}
+
 .cntrSobreMimFoto{
     display: flex;
     align-items: center;
@@ -419,11 +420,7 @@ main{
     top: 150px;
 }
 .projetos h1{
-    color: #ffffff;
-    font-size: 2em;
-    width: 100%;
-    text-align: center;
-    padding: 30px 0px;
+    padding: 30px 10px;
 }
 .projetos > p{
     color: #ffffff;
@@ -438,11 +435,12 @@ main{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 0px 40px 0px 50px;
 }
 .boxViewProjetos{
-    width: 33%;
+    width: 46%;
     padding: 12px;
     z-index: 1;
     
@@ -457,7 +455,7 @@ main{
 .boxViewProjetos img:hover{
     transition: .5s;
     transform: scale(1.1);
-    z-index: 2;
+    z-index: 5;
 }
 
 
@@ -716,10 +714,6 @@ main{
     background-color: #1c242f;
 }
 .contato h1{
-    color: #ffffff;
-    font-size: 2em;
-    width: 100%;
-    text-align: center;
     margin: 20px 0px 30px 0px;
 }
 .contato > p{
@@ -849,4 +843,14 @@ main{
 
 .home .cntrContatoHeader{
     display: none;
+}
+
+
+
+.title{
+    color: #ffffff;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    padding: 0px 10px;
 }

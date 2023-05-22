@@ -10,6 +10,7 @@
     position: fixed;
     z-index: 999;
     background-color: #5c0164;
+    display: none;
 }
 .homeMobile{
     display: block;
@@ -81,14 +82,8 @@
     transform: scale(.6);
 }
 .sobreMimMobile > h1 {
-    color: #ffffff;
     font-size: 1.7em;
-    width: 100%;
-    text-align: center;
     margin-bottom: 50px;
-}
-.sobreMimMobile .cntrSobreMimTexto > h2 {
-    display: none;
 }
 
 .sobreMimMobile > div {
@@ -101,9 +96,7 @@
 .sobreMimMobile .cntrSobreMimTexto {
     margin: 20px;
 }
-.sobreMimMobile .cntrSobreMimTexto p:nth-child(3){
-    display: none;
-}
+
 .sobreMimMobile .cntrSobreMimFoto .cntrFoto {
     border-radius: 50%;
     width: 250px;
@@ -115,14 +108,8 @@
     width: 250px;
     height: 250px;
 }
-.sobreMimMobile .ultimoParagrafo{
-    display: none;
-}
-.sobreMimMobile .ultimoParagrafoOutSide{
-    display: block;
-    padding: 20px;
-    margin-top: 10px;
-}
+
+
 
 
 
@@ -224,4 +211,110 @@
     height: 30px;
     margin: 0px 2px;
     border-radius: 12px;
+}
+
+
+
+@media screen and (max-width: 1300px){
+
+    .cntrBoxViewProjetos {
+        justify-content: space-evenly;
+    }
+    .boxViewProjetos {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1280px){
+
+    .boxViewProjetos {
+        width: 50%;
+
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .cntrNotebook{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 1000px){
+
+    .sobreMimMobile {
+        margin: 0px;
+    }
+    .boxViewProjetos {
+        width: 90%;
+
+    }
+    .sobreMim > h1 {
+        margin-bottom: 70px;
+    }
+    .sobreMim > div {
+        flex-direction: column-reverse;
+        margin: 0px 100px;
+    }
+    .cntrSobreMimTexto {
+        margin: 30px 0px;
+    }
+    .cntrSobreMimTexto > h2 {
+        text-align: center;
+    }
+    .cntrSobreMimFoto .cntrFoto{
+        height: auto;
+    }
+    .cntrSobreMimTexto > h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .sobreMim > div {
+        margin: 0px 50px;
+    }
+
+}
+@media screen and (max-width: 766px){
+
+    .sobreMim > h1 {
+        padding-top: 70px;
+    }
+    .sobreMim > div {
+        margin: 0px 30px;
+    }
+    .title{
+        font-size: 1.7em;
+    }
+}
+@media screen and (max-width: 720px){
+    .sobreMim > div {
+        margin: 0px 20px;
+    }
+
+}
+@media screen and (max-width: 666px){
+    .homeMobile .cntrBemVindo h1 {
+        font-size: 2.1em;
+    }
+}
+@media screen and (max-width: 625px){
+    .homeMobile .cntrBemVindo h1 {
+        font-size: 2em;
+    }
+    .cntrSobreMimTexto > h2 {
+        font-size: 2.3em;
+    }
+}
+@media screen and (max-width: 605px){
+    .formacao {
+        display: none;
+    }
+    .cntrSobreMimTexto > h2 {
+        font-size: 2.1em;
+    }
+}
+@media screen and (max-width: 555px){
+    .homeMobile .cntrBemVindo h1 {
+        font-size: 1.5em;
+    }
 }

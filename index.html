@@ -35,10 +35,10 @@
         </div>
         <div class="cntrNavegacao">
             <div class="navegacao">
-                <a class="btnsNavegacao" href="">Home</a>
-                <a class="btnsNavegacao" href="">Sobre mim</a>
-                <a class="btnsNavegacao" href="">Projetos</a>
-                <a class="btnsNavegacao" href="">Contato</a>
+                <a class="btnsNavegacao" href="#ancora-home">Home</a>
+                <a class="btnsNavegacao" href="#ancora-sobreMim">Sobre mim</a>
+                <a class="btnsNavegacao" href="#ancora-projetos2">Projetos</a>
+                <a class="btnsNavegacao" href="#ancora-contato">Contato</a>
             </div>
         </div>
     </div>
@@ -70,13 +70,13 @@
 
         <section id="ancora-sobreMim" class="ancora sobreMim">
             <img class="enfeite2" src="image/Eu e eu/Enfeite2.png" alt="Enfeites">
-            <h1>Conheça um pouco sobre mim</h1>
+            <h1 class="title">Conheça um pouco sobre mim</h1>
             <div>
                 <div class="cntrSobreMimTexto">
                     <h2>Quem sou eu?</h2>
                         <p>Olá! Meu nome é Pedro Elias, sou um jovem de 20 anos apaixonado por desenvolvimento web. Tenho conhecimentos sólidos em <span>HTML, CSS e JavaScript</span>, além de estar aprimorando minhas habilidades com o curso de <span>WordPress</span>. </p>
                         <p>Acredito que o design e a funcionalidade são essenciais para criar experiências digitais incríveis. Tenho experiência em criar <span>sites responsivos, intuitivos e visualmente atraentes</span>, garantindo a melhor experiência do usuário.</p>
-                        <p class="ultimoParagrafo">Estou sempre em busca de novos desafios e oportunidades para expandir meu conhecimento e aprimorar minhas habilidades. Se você está procurando um <span>desenvolvedor web comprometido, criativo e apaixonado</span>, estou pronto para ajudar a transformar suas ideias em realidade.</p>
+                        <p>Estou sempre em busca de novos desafios e oportunidades para expandir meu conhecimento e aprimorar minhas habilidades. Se você está procurando um <span>desenvolvedor web comprometido, criativo e apaixonado</span>, estou pronto para ajudar a transformar suas ideias em realidade.</p>
                 </div>
 
                 <div class="cntrSobreMimFoto">
@@ -88,16 +88,14 @@
                     </div>
                 </div>
             </div>
-            <p class="ultimoParagrafoOutSide">Estou sempre em busca de novos desafios e oportunidades para expandir meu conhecimento e aprimorar minhas habilidades. Se você está procurando um <span>desenvolvedor web comprometido, criativo e apaixonado</span>, estou pronto para ajudar a transformar suas ideias em realidade.</p>
-
         </section>
 
         <section class="projetos">
-            <img class="efeitoOnda1" src="image/Eu e eu/onda1.png" alt="Efeito onda">
+            <img id="ancora-projetos2" class="efeitoOnda1" src="image/Eu e eu/onda1.png" alt="Efeito onda">
             <img class="enfeite3" src="image/Projetos/enfeite3.png" alt="Enfeite">
             <img class="enfeite5" src="image/Projetos/enfeite5.png" alt="Enfeite">
             
-            <h1 id="ancora-projetos" class="ancora">Veja alguns projetos feitos por mim:</h1>
+            <h1 id="ancora-projetos" class="ancora title">Veja alguns projetos feitos por mim:</h1>
             <p>Sinta-se à vontade para explorar meu portfolio e conhecer alguns dos projetos nos quais trabalhei.</p>
 
             <div class="cntrBoxViewProjetos">
@@ -175,7 +173,7 @@
         <section id="ancora-contato" class="contato ancora">
             <img class="efeitoOnda2" src="image/Eu e eu/onda1.png" alt="Efeito onda">
 
-            <h1>Fale comigo</h1>
+            <h1 class="title">Fale comigo</h1>
             <p>Se você tiver alguma pergunta ou desejar discutir uma colaboração, não hesite em entrar em contato. Mal posso esperar para trabalhar juntos e criar algo incrível!</p>
 
             <div class="cntrContato">
@@ -233,7 +231,9 @@
 
         let modoHeader = "superior"
 
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', controllerMenu);
+
+        function controllerMenu() {
             
             if(mobile == false){
                 if (window.pageYOffset > 0) {
@@ -268,7 +268,7 @@
                 }
             }
 
-        });
+        }
 
         headerSuperior()
 
@@ -373,7 +373,6 @@
 
         for (let i = 0; i < ancoras.length; i++) {
             var posicaoY = ancoras[i].getBoundingClientRect().top + window.pageYOffset;
-            console.log('Posição Y do elemento em relação à página:', posicaoY);
         }
     
     
@@ -610,24 +609,28 @@
 
         let mobile = false;
 
+        let notebook = document.querySelector(".cntrNotebook")
 
-
-
-        
         function responsividade() {
             var larguraTela = window.innerWidth;
 
-            if (larguraTela < 766) {
+
+
+
+            if (larguraTela <= 766) {
                 console.log("mobile");
                 mobile = true;
+                main.style.marginLeft = "0px"
                 header.style.display = "none"
                 headerMobile.style.display = "flex"
                 home.classList.add("homeMobile")
                 sobreMim.classList.add("sobreMimMobile")
                 projetos.classList.add("projetosMobile")
                 contato.classList.add("contatoMobile")
-
-            } else {
+                document.querySelector(".enfeite").style.zIndex = "-1"
+                controllerMenu();
+            }
+            else {
                 mobile = false;
                 header.style.display = "flex"
                 headerMobile.style.display = "none"
@@ -635,7 +638,27 @@
                 sobreMim.classList.remove("sobreMimMobile")
                 projetos.classList.remove("projetosMobile")
                 contato.classList.remove("contatoMobile")
+                document.querySelector(".enfeite").style.zIndex = "2"
+
+                if(larguraTela <= 1280){
+                    larguraTela = window.innerWidth;
+                    var dif = larguraTela - 1280;
+                    notebook.style.right = dif + 'px';
+                }else{
+                    
+                }
             }
+            
+
+
+
+
+        
+            
+
+
+
+        
         }
 
         // Chama a função quando a página é carregada e quando a janela é redimensionada
