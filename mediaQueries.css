@@ -462,6 +462,9 @@
     .cntrBtnContatos-redesSociais{
         margin-top: 60px;
     }
+    .sobreMimMobile .cntrSobreMimTexto {
+        margin: 20px 10px;
+    }
 }
 @media screen and (min-width: 767px){
     main{
