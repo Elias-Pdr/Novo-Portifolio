@@ -246,6 +246,11 @@
                         main.style.marginLeft ="120px"
 
                         setTimeout(() => {
+                            header.style.animation = "none";
+
+                            header.classList.add("headerSupParaLet")
+                            header.classList.remove("headerLetParaSup")
+
                             headerLateral()
                         }, 10);
 
@@ -260,8 +265,12 @@
                     header.style.animation = "headerLetParaSup .2s both";
 
 
-
                     setTimeout(() => {
+                        header.style.animation = "none";
+
+                        header.classList.add("headerLetParaSup")
+                        header.classList.remove("headerSupParaLet")
+
                         headerSuperior()
 
                     }, 10);
@@ -621,6 +630,7 @@
                 console.log("mobile");
                 mobile = true;
                 main.style.marginLeft = "0px"
+                main.style.borderLeft = "none"
                 header.style.display = "none"
                 headerMobile.style.display = "flex"
                 home.classList.add("homeMobile")
@@ -634,6 +644,7 @@
             else {
 
                 mobile = false;
+                main.style.borderLeft = "border-left: 1px solid rgba(102, 102, 102, 0.3)"
                 header.style.display = "flex"
                 headerMobile.style.display = "none"
                 home.classList.remove("homeMobile")
@@ -650,17 +661,6 @@
                     
                 }
             }
-            
-
-
-
-
-        
-            
-
-
-
-        
         }
 
         // Chama a função quando a página é carregada e quando a janela é redimensionada
