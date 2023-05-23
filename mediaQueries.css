@@ -78,7 +78,8 @@
     font-size: 3em;
 }
 .homeMobile .cntrBemVindo button {
-    margin-top: 30px;
+    margin-top: 0px;
+    margin-right: 20px;
     padding: 12px 30px;
 }
 .homeMobile .btnsNavegacao {
@@ -257,18 +258,26 @@
     color: #999;
     cursor: pointer;
 }
-
+.cntrBtnContatos-redesSociais{
+    margin-top: 60px;
+    display: flex;
+}
 .homeMobile .cntrContatoHeader {
     display: flex;
     justify-content: flex-end;
     width: fit-content;
     align-items: center;
     flex-direction: row;
-    width: 100%;
-    bottom: 0px;
-    right: 0px;
-    position: absolute;
+
 }
+.homeMobile  .btnsNavegacaoHeaderLateral {
+    width: fit-content;
+    margin: 2px;
+    padding: 10px 20px;
+    font-size: .9em;
+}
+
+
 .homeMobile .iconsRedesProficionais {
     width: 30px;
     height: 30px;
@@ -422,6 +431,9 @@
         padding: 50px;
         padding-bottom: 90px;
     }
+    .cntrBtnContatos-redesSociais{
+        margin-top: 60px;
+    }
 }
 @media screen and (min-width: 767px){
     main{
@@ -438,6 +450,9 @@
     }
     .cntrOndasHome{
         display: none;
+    }
+    .cntrBtnContatos-redesSociais{
+        margin-top: 0px;
     }
 }
 @media screen and (max-width: 730px){

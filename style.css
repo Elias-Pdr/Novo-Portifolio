@@ -121,6 +121,16 @@ header{
     text-decoration: none;
     min-width: fit-content;
 }
+.btnsNavegacaoContato{
+    transition: 1s;
+    font-size: .95em;
+    border-radius: 10px;
+    margin: 0px 2px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    min-width: fit-content;
+}
 
 .btnsNavegacao:hover{
     transition: 1s;
@@ -234,6 +244,7 @@ main{
 .cntrBemVindo h1 .myName{
     color: #c492db;
 }
+
 .cntrBemVindo button{
     margin-top: 50px;
     padding: 16px 50px;
