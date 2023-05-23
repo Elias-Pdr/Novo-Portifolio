@@ -299,6 +299,9 @@ main{
     }
 }
 
+.cntrOndasHome{
+    display: none;
+}
 .enfeite{
     position: absolute;
     bottom: 0px;

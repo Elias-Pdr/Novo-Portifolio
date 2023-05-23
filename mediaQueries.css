@@ -1,4 +1,4 @@
-.headerMobile{
+   .headerMobile{
     padding: 0px 20px;
     padding-right: 10px;
     color: white;
@@ -56,11 +56,8 @@
     display: block;
     height: fit-content;
     padding-top: calc(70px + 40px);
-    background-image: linear-gradient(#5c0164, #6b0e5b);
-}
-.homeMobile .cntrNotebook{
-    display: none;
-}
+    background-image: linear-gradient(#5c0164, #6b0e5b);}
+
 .homeMobile .cntrSemiCirc > img {
     display: none;
 }
@@ -69,23 +66,16 @@
     z-index: 1;
     color: rgb(230, 230, 230);
     animation: none;
-    border: 22px solid #e2e9e3;
-    border-top: 26px solid #e2e9e3;
-    border-bottom: 26px solid #e2e9e3;
-    border-radius: 14px 14px 0px 0px;
-    margin: 0px 30px;
-    width: calc(100% - 60px);
 }
 .homeMobile .cntrBemVindo {
     position: relative;
     padding-left: 0px;
-    background-color: #121212;
     width: 100%;
     padding: 30px;
     padding-bottom: 20px;
 }
 .homeMobile .cntrBemVindo h1 {
-    font-size: 2.3em;
+    font-size: 3em;
 }
 .homeMobile .cntrBemVindo button {
     margin-top: 30px;
@@ -96,17 +86,50 @@
     padding: 0px;
 }
 
-.homeMobile .tecladoNotebook{
-    width: 100%;
-    height: 22px;
-    display: block;
-    background-color: #e5eeee;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    z-index: 2;
+.homeMobile .cntrOndasHome{
     position: relative;
-    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+
+}
+.homeMobile .cntrOndasHome svg {
+    width: 100%;
+}
+.homeMobile .cntrOndasHome svg path{
+    width: 100vw;
 }
 
+.homeMobile .ondasHome{
+    position: relative;
+    z-index: 3;
+    bottom: -10px;
+}
+.homeMobile .ondasHome2{
+    position: absolute;
+    z-index: 1;
+    bottom: 4px;
+    right: -10px;
+    transform: rotate(-2deg);
+
+}
+.homeMobile .ondasHome3{
+    position: absolute;
+    z-index: 2;
+    bottom: 2px;
+    left: -10px;
+    transform: rotate(2.5deg);
+}
+
+.homeMobile .ondasHome path{
+    fill: var(--corPrincipal);
+}
+.homeMobile .ondasHome2 path{
+    fill: #d04a5e;
+}
+.homeMobile .ondasHome3 path{
+    fill: #7525b1;
+}
 
 
 
@@ -315,6 +338,25 @@
 
 @media screen and (max-width: 766px){
 
+
+    main{
+        margin-left:  0px;
+        border-left:  none;
+    }
+
+    header{
+        display:  none;
+    }
+    .headerMobile{
+        display:  flex;
+    }
+    .cntrOndasHome{
+        display: block;
+    }
+    .enfeite{
+        z-index: -1;
+    }
+    
     .sobreMim > h1 {
         padding-top: 70px;
     }
@@ -324,6 +366,37 @@
     .title{
         font-size: 1.7em;
     }
+
+    .homeMobile .cntrBemVindo h1 {
+        font-size: 2.9em;
+    }
+    .homeMobile .cntrBemVindo {
+        padding: 50px;
+        padding-bottom: 90px;
+    }
+}
+@media screen and (min-width: 767px){
+    main{
+        border-left: 1px solid rgba(102, 102, 102, 0.3);
+    }
+    header{
+        display: flex;
+    }
+    .headerMobile{
+        display: none;
+    }
+    .enfeite{
+        z-index: 2;
+    }
+    .cntrOndasHome{
+        display: none;
+    }
+}
+@media screen and (max-width: 730px){
+    .homeMobile .cntrBemVindo h1 {
+        font-size: 2.7em;
+    }
+
 }
 @media screen and (max-width: 720px){
     .sobreMim > div {
@@ -333,27 +406,25 @@
 }
 @media screen and (max-width: 666px){
     .homeMobile .cntrBemVindo h1 {
-        font-size: 2.1em;
+        font-size: 2.5em;
     }
 }
 @media screen and (max-width: 625px){
     .homeMobile .cntrBemVindo h1 {
-        font-size: 2em;
+        font-size: 2.3em;
     }
     .cntrSobreMimTexto > h2 {
         font-size: 2.3em;
     }
 }
 @media screen and (max-width: 605px){
-    .formacao {
-        display: none;
-    }
+
     .cntrSobreMimTexto > h2 {
         font-size: 2.1em;
     }
 }
-@media screen and (max-width: 555px){
+@media screen and (max-width: 565px){
     .homeMobile .cntrBemVindo h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
