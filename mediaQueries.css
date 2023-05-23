@@ -334,6 +334,29 @@
 }
 
 
+.headerMobile .cntrLogo{
+    display: none;
+}
+
+.headerMobileTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.headerMobileScroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+
+}
+
+
+
 
 @media screen and (max-width: 1300px){
 
@@ -389,6 +412,11 @@
 }
 @media screen and (max-width: 970px){
     .headerLetParaSup{
+        padding: 20px 50px;
+    }
+}
+@media screen and (max-width: 920px){
+    .headerSuperior{
         padding: 20px 50px;
     }
 }
