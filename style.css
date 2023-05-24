@@ -329,7 +329,7 @@ main{
 }
 .enfeite{
     position: absolute;
-    bottom: 0px;
+    bottom: -16px;
     z-index: 1;
     right: 0px;
     width: 500px;
@@ -499,7 +499,7 @@ main{
 }
 .boxViewProjetos img:hover{
     transition: .5s;
-    transform: scale(1.1);
+    transform: scale(1.05);
     z-index: 5;
 }
 
@@ -798,6 +798,8 @@ main{
 }
 #submit{
     cursor: pointer;
+    border-radius: 14px;
+    color: #ccc;
 }
 
 #assunto{
@@ -836,8 +838,10 @@ main{
     height: 42px;
     background-color: #09151f;
     border: none;
-    color: #999;
+    color: #ccc;
     cursor: pointer;
+    border-radius: 14px;
+
 }
 .cntrBtnContatoRedes button:hover,
 .cntrContato input:hover,

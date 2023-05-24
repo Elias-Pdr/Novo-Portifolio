@@ -255,7 +255,7 @@
     height: 42px;
     background-color: #09151f;
     border: none;
-    color: #999;
+    color: #ccc;
     cursor: pointer;
 }
 .cntrBtnContatos-redesSociais{
@@ -308,7 +308,8 @@
     display: none;
     flex-direction: column;
 }
-.headerPreviewProjetosMobile{
+.headerPreviewProjetosMobile,
+.footerPreviewProjetosMobile{
     background-color: #09151f;
     display: flex;
     align-items: center;
@@ -320,30 +321,58 @@
     padding: 10px;
     border-radius: 20px;
 }
-.btnVoltar{
+.btnVoltar, .btnsNavegacaoProjetosMobileEsquerda{
     position: absolute;
     left: 14px;
     width: 50px;
     height: 30px;
     cursor: pointer;
 }
-.headerPreviewProjetosMobile svg{
+.btnsNavegacaoProjetosMobileDireita{
+    position: absolute;
+    right: 14px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.previewProjetosMobile svg{
     width: 30px;
     height: 30px;
 }
-.headerPreviewProjetosMobile h1{
+.previewProjetosMobile h1{
     width: 100%;
     text-align: center;
     color: #ccc;
     font-variant: small-caps;
     font-size: 1em;
 }
-.iframeMobile{
+
+.cntrIframeMobile{
     background-color: #09151f;
     width: calc(100% - 40px);
     height: 100%;
     margin: 10px 20px;
     margin-top: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.cntrIframeMobile p{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+}
+.iframeProjetosMobile{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 1px;
+    z-index: 2;
 }
 
 
@@ -489,6 +518,9 @@
     }
     .sobreMimMobile > div {
         padding: 0px;
+    }
+    .cntrBoxViewProjetos{
+        padding: 0px 14px;
     }
 }
 @media screen and (min-width: 767px){
