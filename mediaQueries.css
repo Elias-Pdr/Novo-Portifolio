@@ -453,7 +453,7 @@
     }
 
     .homeMobile .cntrBemVindo h1 {
-        font-size: 2.9em;
+        font-size: 3em;
     }
     .homeMobile .cntrBemVindo {
         padding: 30px;
@@ -467,6 +467,12 @@
     }
     .formacao{
         font-size: .8em;
+    }
+    .cntrNavegacao{
+        width: 100%;
+    }
+    .navegacao a{
+        width: 25%;
     }
 }
 @media screen and (min-width: 767px){
@@ -491,37 +497,46 @@
 }
 @media screen and (max-width: 730px){
     .homeMobile .cntrBemVindo h1 {
-        font-size: 2.7em;
+        font-size: 2.9em;
     }
 
 }
+
 @media screen and (max-width: 720px){
     .sobreMim > div {
         margin: 0px 20px;
     }
 
 }
+@media screen and (max-width: 690px){
+    .homeMobile .cntrBemVindo h1 {
+        font-size: 2.8em;
+    }
+
+}
 @media screen and (max-width: 666px){
     .homeMobile .cntrBemVindo h1 {
-        font-size: 2.5em;
+        font-size: 2.65em;
     }
 }
 @media screen and (max-width: 625px){
     .homeMobile .cntrBemVindo h1 {
-        font-size: 2.3em;
+        font-size: 2.5em;
     }
     .cntrSobreMimTexto > h2 {
         font-size: 2.3em;
     }
 }
 @media screen and (max-width: 605px){
-
+    .homeMobile .cntrBemVindo h1 {
+        font-size: 2.35em;
+    }
     .cntrSobreMimTexto > h2 {
         font-size: 2.1em;
     }
 }
 @media screen and (max-width: 565px){
     .homeMobile .cntrBemVindo h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 }
