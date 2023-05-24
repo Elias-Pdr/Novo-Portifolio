@@ -159,7 +159,21 @@ header{
     transition: 1s;
     transform: scale(1.1);
 }
+.iconsRedesProficionaisHeaderSuperior{
+    width: 46px;
+    height: 46px;
+    margin: 0px 8px;
+    padding: 10px;
+    border-radius: 12px;
+}
+.iconsRedesProficionaisHeaderLateral{
 
+    width: 37px;
+    height: 37px;
+    margin: 0px 2px;
+    padding: 8px;
+    border-radius: 0px;
+}
 #iconGitHub:hover{
     background-color: rgba(0, 0, 0, 0.5);
 }

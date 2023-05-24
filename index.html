@@ -333,11 +333,11 @@
             header.classList.remove("headerLateral")
 
             for (let i = 0; i < iconsRedesProficionais.length; i++) {
-                iconsRedesProficionais[i].style.width = "46px";
-                iconsRedesProficionais[i].style.height = "46px";
-                iconsRedesProficionais[i].style.margin = "0px 8px";
-                iconsRedesProficionais[i].style.padding = "10px";
-                iconsRedesProficionais[i].style.borderRadius = "12px";
+
+                iconsRedesProficionais[i].classList.add("iconsRedesProficionaisHeaderSuperior")
+                iconsRedesProficionais[i].classList.remove("iconsRedesProficionaisHeaderLateral")
+
+
             }
 
             navegacao.style.flexDirection = "row";
@@ -356,11 +356,10 @@
             
 
             for (let i = 0; i < iconsRedesProficionais.length; i++) {
-                iconsRedesProficionais[i].style.width = "37px";
-                iconsRedesProficionais[i].style.height = "37px";
-                iconsRedesProficionais[i].style.margin = "0px 2px";
-                iconsRedesProficionais[i].style.padding = "8px";
-                iconsRedesProficionais[i].style.borderRadius = "0px";
+
+                iconsRedesProficionais[i].classList.add("iconsRedesProficionaisHeaderLateral")
+                iconsRedesProficionais[i].classList.remove("iconsRedesProficionaisHeaderSuperior")
+
             }
 
             navegacao.style.flexDirection = "column";
