@@ -80,7 +80,7 @@
 .homeMobile .cntrBemVindo button {
     margin-top: 0px;
     margin-right: 20px;
-    padding: 12px 30px;
+    padding: 12px 40px;
 }
 .homeMobile .btnsNavegacao {
     transition: 1s;
@@ -456,7 +456,7 @@
         font-size: 2.9em;
     }
     .homeMobile .cntrBemVindo {
-        padding: 50px;
+        padding: 30px;
         padding-bottom: 90px;
     }
     .cntrBtnContatos-redesSociais{
@@ -464,6 +464,9 @@
     }
     .sobreMimMobile .cntrSobreMimTexto {
         margin: 20px 10px;
+    }
+    .formacao{
+        font-size: .8em;
     }
 }
 @media screen and (min-width: 767px){
