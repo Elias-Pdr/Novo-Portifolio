@@ -391,7 +391,7 @@
 
     }
     .sobreMim > h1 {
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
     .sobreMim > div {
         flex-direction: column-reverse;
@@ -463,7 +463,7 @@
         margin-top: 60px;
     }
     .sobreMimMobile .cntrSobreMimTexto {
-        margin: 20px 10px;
+        margin: 50px 10px;
     }
     .formacao{
         font-size: .8em;
