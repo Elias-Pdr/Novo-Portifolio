@@ -474,6 +474,9 @@
     .navegacao a{
         width: 25%;
     }
+    .sobreMimMobile > div {
+        padding: 0px;
+    }
 }
 @media screen and (min-width: 767px){
     main{
