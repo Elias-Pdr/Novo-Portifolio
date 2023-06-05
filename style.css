@@ -663,24 +663,27 @@ main{
 .cntrBtnsBarraPreview{
     width: 100%;
 }
-.cntrBtnsBarraPreview span, #btnCopiarLink{
+.cntrBtnsBarraPreview button{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     text-decoration: none;
-    border-top: 1px solid rgba(102, 102, 102, 0.5);
     padding: 20px 0px;
     cursor: pointer;
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(102, 102, 102, 0.5);
 }
-.cntrBtnsBarraPreview span:hover, #btnCopiarLink:hover{
+.cntrBtnsBarraPreview button:last-child{
+    border-bottom: 1px solid rgba(102, 102, 102, 0.5);
+}
+.cntrBtnsBarraPreview button:hover{
     background-color: rgba(9, 21, 31, 0.5);
     transition: 1s;
 }
-#btnCopiarLink{
-    border-bottom: 1px solid rgba(102, 102, 102, 0.5);
-}
+
 .cntrBtnsBarraPreview svg{
     width: 24px;
     height: 24px;
@@ -788,7 +791,7 @@ main{
     height: 42px;
     background-color: #09151f;
     border: none;
-    color: #999;
+    color: #fff;
 }
 .cntrContato textarea{
     height: 84px;
@@ -845,9 +848,12 @@ main{
 }
 .cntrBtnContatoRedes button:hover,
 .cntrContato input:hover,
-.cntrContato textarea:hover{
+.cntrContato input:focus,
+.cntrContato textarea:hover,
+.cntrContato textarea:focus{
     background-color: #060d14;
 }
+
 
 .endPage{
     margin-top: 40px;
@@ -893,8 +899,6 @@ main{
 .home .cntrContatoHeader{
     display: none;
 }
-
-
 
 .title{
     color: #ffffff;
