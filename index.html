@@ -732,12 +732,26 @@
             window.open(linksSiteProjetos[indiceImgPreviewProjeto - 1], '_blank');
         }
         function comentar(){
-            fecharPreviewProjetos()
-            document.documentElement.scrollTop = document.documentElement.scrollHeight;
             subjectInput.value = "Comentario sobre o projeto 2 - Air Jordan 6"
             document.querySelector(".menuPreviewProjetMobile").style.animation = "none"
             document.querySelector(".menuPreviewProjetMobile").style.display = "none"
+            controllerMenuImgMobile(".abrirMenuPreviewProjet", ".fecharMenuPreviewProjet")
 
+            document.querySelector(".previewProjetosMobile").style.animation = "closePreviewProjetosMobile .4s both"
+            document.querySelector(".previewProjetos").style.animation = "closePreviewProjetosMobile .4s both"
+            for (let i = 0; i < document.querySelectorAll(".sectionMain").length; i++) {
+                document.querySelectorAll(".sectionMain")[i].style.display = "block"
+            }
+            document.documentElement.style.scrollBehavior = 'auto';
+            window.scrollTo(0, 0);
+
+            setTimeout(() => {
+                document.querySelector(".previewProjetosMobile").style.display = "none"
+                document.querySelector(".previewProjetos").style.display = "none"
+                document.querySelector(".previewProjetosMobile").style.animation = "openPreviewProjetosMobile .4s both"
+                document.querySelector(".previewProjetos").style.animation = "openPreviewProjetosMobile .4s both"
+                window.scrollTo(0, document.documentElement.scrollHeight);
+            }, 400);
         }
         function controllerMenuImgMobile(iconAbrir, iconFechar){
             if (document.querySelector(iconAbrir).style.display == "none") {
