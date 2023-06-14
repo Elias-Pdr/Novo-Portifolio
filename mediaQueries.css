@@ -469,12 +469,13 @@
     height: 100%;
     border-radius: 14px;
     border: 2px solid var(--corPrincipal);
-    max-width: calc(100vw -20px);
+    width: 100%;
+    margin: 20px;
 
 }
 .imgModoExibDesktop {
     width: 100vh;
-    max-height: calc(100vw -20px);
+    height: 90vw;
     border-radius: 14px;
     border: 2px solid var(--corPrincipal);
     transform: rotate(90deg);
