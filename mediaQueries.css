@@ -425,7 +425,7 @@
 
 .menuPreviewProjetMobile button{
     padding: 14px 20px;
-    font-size: .9em;
+    font-size: .8em;
     border: 0px;
     border-left: 2px solid #09151f;
     cursor: pointer;
@@ -469,9 +469,12 @@
     height: 100%;
     border-radius: 14px;
     border: 2px solid var(--corPrincipal);
+    max-width: calc(100vw -20px);
+
 }
 .imgModoExibDesktop {
     width: 100vh;
+    max-height: calc(100vw -20px);
     border-radius: 14px;
     border: 2px solid var(--corPrincipal);
     transform: rotate(90deg);
