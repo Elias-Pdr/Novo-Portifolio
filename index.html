@@ -190,7 +190,7 @@
             </div>
 
             <div class="cntrImgPreviewProjeto">
-                <img src="" alt="" class="imgPreviewProjeto">
+                <img src="" alt="" class="imgPreviewProjeto" onclick="visitarSite()">
             </div>
         </div>
 
@@ -228,7 +228,7 @@
 
 
             <div class="cntrImgPreviewProjetoMobile">
-                <img src="" alt="" class="imgPreviewProjetoMobile">
+                <img src="" alt="" class="imgPreviewProjetoMobile" onclick="visitarSite()">
             </div>
             
             <div class="footerPreviewProjetosMobile">
@@ -280,7 +280,6 @@
 
     <footer>
     </footer>
-
 
 
     <script>
@@ -644,7 +643,7 @@
 
 
         let imgsProjetos = ['image/Projetos/projetoPreview (1).png']
-        let imgsProjetosMobile = ['image/Projetos/projetoPreviewMobile (1).jpeg']
+        let imgsProjetosMobile = ['image/Projetos/projeto-1/projeto-1-mobile(1).jpeg']
         let linksSiteProjetos = ['https://elias-pdr.github.io/projeto001---Air-Jordan-6/']
         let linksCodProjetos = ['https://github.com/Elias-Pdr/projeto001---Air-Jordan-6']
 
@@ -663,7 +662,6 @@
             else if(modoExibicaoPreviewMobile == "desktop"){
                 imgPreviewProjetoMobile.src = imgsProjetos[indice - 1]
             }
-
             if(modoExibicaoPreviewDesktop == "desktop"){
                 imgPreviewProjeto.src = imgsProjetos[indice - 1]
             }

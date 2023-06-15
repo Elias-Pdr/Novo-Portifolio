@@ -468,16 +468,17 @@
 .imgModoExibMobile{
     border-radius: 14px;
     border: 2px solid var(--corPrincipal);
-    width: 100%;
+    height: 100%;
     margin: 20px;
-
+    cursor: pointer;
 }
 .imgModoExibDesktop {
     width: 100vh;
-    height: 90vw;
+    max-height: 90vw;
     border-radius: 14px;
     border: 2px solid var(--corPrincipal);
     transform: rotate(90deg);
+    cursor: pointer;
 }
 
 
